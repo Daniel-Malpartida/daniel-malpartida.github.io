@@ -1,0 +1,165 @@
+* {
+    cursor: default;
+}
+
+.main {
+    padding-top: 7.2rem;
+}
+
+p {
+    margin-bottom: 1.6em;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+.subtitulo {
+    color: rgb(0, 7, 70);
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/*Elemento about*/
+.about {
+    text-align: center;
+}
+
+.aboutsub {
+    line-height: 1.7;
+}
+
+.aboutmain {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+
+.abouticons {
+    gap: 1em;
+    justify-content: center;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.abouticon {
+    width: 250px;
+}
+
+.abouttitle {
+    font-size: 18px;
+    color: rgb(1, 92, 1);
+}
+
+/*Elemento Contanto de Tienda*/
+
+.footer2 {
+    padding: 1rem 0;
+    margin-top: 6rem;
+    width: 100%;
+}
+
+.footer2 .grupo10 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.footer2 .grupo10 .box1 figure {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    margin: auto;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.footer2 .grupo10 .box1 figure img {
+    width: 240px;
+}
+
+.footer2 .grupo10 .box1 h2 {
+    color: rgb(1, 47, 116);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer2 .grupo10 .box1 p {
+    color: #001a3b;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6rem;
+    
+    text-align: center;
+}
+
+.footer2 .grupo10 .redsocial1 a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    margin-right: 10px;
+    background-color: #adccfc;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.footer2 .grupo10 .redsocial1 a:hover {
+    color: rgb(0, 33, 105);
+}
+
+.footer2 .grupo20 {
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.footer2 .grupo20 small {
+    font-size: 15px;
+}
+
+.aboutmain .abouticons a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.aboutmain .abouticons a:hover {
+    background: #2fb4cc;
+    color: #fff;
+
+}
+
+
+@media only screen and (max-width: 860px) {
+
+    .footer2 .grupo10 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        text-align: center;
+    }
+    
+}

@@ -1,0 +1,262 @@
+.main {
+    padding-top: 7.2rem;
+}
+
+p {
+    margin-bottom: 1.6em;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+.cta {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 106, 228);
+    padding: 9px 20px;
+    border: 1px solid rgb(0, 106, 228);
+    transition: all .3s ease-in-out;
+    border-radius: 3px;
+}
+
+.cta:hover {
+    background-color: rgb(0, 106, 228);
+    color: rgb(255, 255, 255);
+}
+
+.subtitulo {
+    color: rgb(0, 7, 70);
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/*Elemento about*/
+.about {
+    text-align: center;
+}
+
+.aboutsub {
+    line-height: 1.7;
+}
+
+.aboutmain {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+
+.abouticons {
+    gap: 1em;
+    justify-content: center;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.abouticon {
+    width: 80px;
+}
+
+.abouttitle {
+    font-size: 18px;
+    color: rgb(1, 92, 1);
+}
+
+/*Elemento conocimiento*/
+
+/*Copiado de https://www.magicpattern.design/tools/css-backgrounds*/
+.conocimiento {
+    background-color: #e5e5f7;
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    overflow: hidden;
+}
+
+.conocimientocontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.conocimientopicture {
+    max-width: 250px;
+}
+
+.conocimientoparrafo {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.conocimientoimg {
+    width: 100%;
+    display: block;
+}
+
+/*Estilos articulos texto*/
+
+.container3 {
+    padding-top: 60px;
+}
+
+/*Elemento about2*/
+.about2 {
+    text-align: center;
+}
+
+.abouttitle2 {
+    font-size: 18px;
+    color: rgb(0, 7, 70);
+}
+
+.aboutsub2 {
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.aboutmain2 {
+    padding-top: 40px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+}
+
+.abouticons2 {
+    gap: 1em;
+    justify-content: center;
+    justify-items: center;
+    width: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.abouticon2 {
+    width: 100%;
+}
+
+/*Elemento Cards*/
+
+* {
+    cursor: default;
+}
+
+.body02 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container4 {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+
+.imagenarticulo {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 100%;
+    margin: 16px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido {
+    padding: 14px;
+    text-align: center;
+}
+
+.card .contenido p {
+    line-height: 1.5;
+    color: #6a6a6a;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.card .contenido h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.card .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover {
+    background: #2fb4cc;
+    color: #fff;
+
+}
+
+
+@media only screen and (max-width: 860px) {
+
+    .conocimientoimg {
+        display: none;
+    }
+    .conocimientocontainer {
+        grid-template-columns: 1fr;
+    }
+
+    .aboutmain2 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    }
+    
+    .abouticons2 {
+        width: 300px;
+    }
+
+    .body02 {
+        display: inline-block;
+    }
+
+    .container4 {
+        display: inline-block;
+        max-width: 450px;
+    }
+    
+}

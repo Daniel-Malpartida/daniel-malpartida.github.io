@@ -1,0 +1,91 @@
+/* Pie de pagina */
+.footer {
+    background: #000f30;
+    padding: 1rem 0;
+    margin-top: 6rem;
+
+    width: 100%;
+}
+
+.footer .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.footer .grupo1 .box figure {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    margin: auto;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grupo1 .box figure img {
+    width: 140px;
+}
+
+.footer .grupo1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer .grupo1 .box p {
+    color: #eeffea;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6rem;
+}
+
+.footer .grupo1 .redsocial a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #eeffea;
+    margin-right: 10px;
+    background-color: #021b41;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.footer .grupo1 .redsocial a:hover {
+    color: rgb(52, 255, 130);
+}
+
+.footer .grupo2 {
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.footer .grupo2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 860px) {
+
+    .footer .grupo1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+

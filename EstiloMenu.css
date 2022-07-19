@@ -1,0 +1,130 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.3em;
+}
+
+/* Cabecera */
+.header {
+    background: rgb(245, 255, 247);
+    color: rgb(0, 98, 163);
+    padding: 1rem 0;
+    padding-bottom: 0.8rem;
+    transition: 2s;
+
+    /*Cabecera siempre visible*/
+    position: fixed;
+    /*Cabecera siempre adelante*/
+    z-index: 2;
+    
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+    .header a {
+        color: rgb(0, 98, 163);
+        text-decoration: none;
+    }
+
+.logocontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menuicon {
+    display: none;
+}
+
+/* Menu */
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+}
+
+    .navigation ul li {
+        display: inline-block;
+    }
+
+        .navigation ul li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.4s linear;
+            border-radius: 28px;
+        }
+
+            .navigation ul li a:hover {
+                background: rgb(175, 255, 181);
+            }
+
+/* Responsive design */
+@media only screen and (max-width: 860px) {
+
+    /* Cambio de color a la cabecera*/
+    .header {
+        background: rgb(204, 255, 207);
+        padding: 0.8rem 0;
+        padding-bottom: 0.5rem;
+        transition: 2s;
+    }
+
+    .menuicon {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+
+        .menuicon:hover {
+            background: rgb(140, 250, 150);
+            transition: all 0.5s linear;
+            border-radius: 30px;
+        }
+
+    .navigation {
+        width: 100%;
+        margin-top: 0.8rem;
+    }
+
+        .navigation ul {
+            display: none;
+        }
+
+        .navigation ul.show {
+            display: block;
+            text-align:center;
+            font-size: 22px;
+        }
+
+        .navigation ul li {
+            display: block;
+        }
+        
+            .navigation ul li a {
+                display: block;
+                padding: 0.5rem 0;
+                transition: all 0.4s linear;
+                border-radius: 28px;
+            }
+        
+                .navigation ul li a:hover {
+                    background: rgb(140, 250, 150);
+                }
+
+}
+

@@ -1,0 +1,28 @@
+* {
+    cursor: default;
+}
+
+.main {
+    padding-top: 7.2rem;
+}
+
+.subtitulo {
+    color: rgb(0, 7, 70);
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 1.6em;
+    font-size: 16px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.fb {
+    justify-content: center;
+    display: flex;
+}
+
+
